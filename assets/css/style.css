@@ -235,9 +235,34 @@ header {
 
 /*Media Queries*/
 
-@media screen and (max-width:960px) {
-	/*put picture directly above text in About Me sectin*/
-	/*put pictures on top of eachother in portfolio section*/
+@media screen and (max-width:980px) {
+    /*general changes*/
+	.entire-content-area {
+	    width:730px;
+	}
+	.header-container {
+    	width:730px;
+    	margin:auto;
+	}
+    .main-section-content{
+        width:358px;
+        padding:30px;
+        margin-right:20px;
+        margin-bottom:50px;
+    
+    }
+
+    /*put picture directly above text in About Me sectin*/
+    .headshot {
+        height:250px;
+        width:250px;
+        float:none;
+        margin:0 20px 20px 0;
+    } 
+    /*put pictures on top of eachother in portfolio section*/
+    .float-right, .float-left {
+        float:none;
+    }
 	/*make text window slightly smaller in contact section*/
 
 }
