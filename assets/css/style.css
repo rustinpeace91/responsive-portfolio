@@ -254,8 +254,8 @@ header {
 
     /*put picture directly above text in About Me sectin*/
     .headshot {
-        height:250px;
-        width:250px;
+        height:358px;
+        width:358px;
         float:none;
         margin:0 20px 20px 0;
     } 
@@ -263,14 +263,98 @@ header {
     .float-right, .float-left {
         float:none;
     }
-	/*make text window slightly smaller in contact section*/
-
+    .portfolio-item{
+        width:358px;
+        height:295px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    /*move sidebar to bottom as a block item*/
+    .entire-content-area {
+	    width:90%;
+	}
+    .main-section-content {
+        width:90%;
+        float:none;
+    }
+    .sidebar-container {
+        text-align:left;
+        padding:none;
+    }
+    .sidebar{
+        float:none;
+        width:100%;
+        margin:auto;
+    }
+    .container {
+        height:auto;
+    }
+    /*change image to 150px*/
+    .headshot {
+        height:150px;
+        width:150px;
+        float:left;
+        margin:0 20px 20px 0;
+    } 
+    /*make portfolio back to normal*/
+    .main-section-content{
+        min-height: 710px;
+    }
+    .float-right{
+        float:right;
+    } 
+    .float-left {
+        float:left;
+    }
+    .portfolio-item{
+        width:238px;
+        height:175px;
+        margin-bottom:50px;
+    }
 }
 
 @media screen and (max-width:640px) {
+    /*change navbar to mobile friendly version*/
+    .header-container{
+        width:auto;
+    }
+    .header-container h1, .header-container ul li{
+        float:none;
+    }
+    .header-container li {
+        display:inline-block;
 
+    }
+    .nav-menu li:not(:last-child):after{
+        padding-left:30px;
+        content: " | ";
+    }
+    .header-container ul{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+    }
+    /*enlarge image in about me section*/
+    .headshot {
+        height:100%;
+        width:100%;
+        float:none;
+        margin:0 20px 20px 0;
+    } 
+    /*change portfolio to mobile friendly version*/
+    .float-right, .float-left {
+        float:none;
+    }
+    .portfolio-item{
+        /*because the screen no longer scales down at a certain width 
+        the image cannot be a fixed size*/
+        width:90%;
+        height:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
